@@ -2,6 +2,9 @@
 
 Inspired by an [e-ink project](https://medium.com/s/story/very-slow-movie-player-499f76c48b62?sk=deadb3073d5ef89fc425f61b1aabec5e) of the same name. Unfortunately no source code for appeared to be released, but the write up was almost sufficient to build exactly the same thing.
 
+## Requirements
+Creating using node v10. Assumes Linux (Ubuntu). Tested with Chrome.
+
 ## Setting up
 Copy a movie file into `./media` then run the init script
 ```
@@ -18,4 +21,8 @@ We need a few things
 sh example.sh &
 node webserver.js
 ```
+
+## Future
+I'd like to create a canned RaspberryPi distribution for easy setup and use.
+It current plays 1 frame per 30 seconds, configuration of this might be nice.
 
