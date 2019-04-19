@@ -26,3 +26,4 @@ node webserver.js
 I'd like to create a canned RaspberryPi distribution for easy setup and use.
 It current plays 1 frame per 30 seconds, configuration of this might be nice.
 
+[MIT License](https://github.com/andrewlow/VSMP/blob/master/LICENSE)
