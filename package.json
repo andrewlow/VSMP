@@ -1,0 +1,17 @@
+{
+  "name": "vsmp",
+  "version": "1.0.0",
+  "description": "Very Slow Media Player",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ffmpeg-probe": "^1.0.6",
+    "fluent-ffmpeg": "^2.1.2",
+    "node-persist": "^3.0.4",
+    "node-static": "^0.7.11"
+  }
+}

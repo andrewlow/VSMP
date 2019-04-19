@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+div img {
+  width: 100%;
+  margin: 0
+  background: black;
+}
+
+</style>
+</head>
+<body style="background-color:black;">
+<div>
+  <img id="frame" src="frame.png?" + new Date.getTime()>
+</div>
+
+</body>
+
+<script>
+
+function updateImage()
+{
+    document.getElementById("frame").src = "frame.png?" + new Date().getTime();
+console.log("x")
+	setTimeout(updateImage, 30 * 1000); 
+}
+
+updateImage()
+</script>
+
+</html>
+
