@@ -1,3 +1,4 @@
 ./config/*
 ./media/*
-./node_modules/*
+./node_modules
+./public/frame.png

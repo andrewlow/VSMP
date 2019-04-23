@@ -39,11 +39,11 @@ async function main() {
   var timeStamp =
     date.getUTCHours() +
     ":" +
-    date.getUTCMinutes() +
+    ("0" + date.getUTCMinutes()).slice(-2) +
     ":" +
-    date.getUTCSeconds() +
+    ("0" + date.getUTCSeconds()).slice(-2) +
     "." +
-    date.getUTCMilliseconds();
+    ("00" + date.getUTCMilliseconds()).slice(-3);
   // console.log(timeStamp);
 
   cmd.screenshots({
