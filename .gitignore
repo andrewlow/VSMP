@@ -1,4 +1,4 @@
-./config/*
-./media/*
-./node_modules
-./public/frame.png
+config/*
+media/*
+node_modules/*
+public/frame.png
