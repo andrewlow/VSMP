@@ -3,29 +3,44 @@
 <head>
 <style>
 
+.container {
+  position: relative;
+  height:100vh;
+}
+
 div img {
   width: 100%;
   margin: 0
   background: black;
 }
+.bottom-right {
+  font-family:    Arial, Helvetica, sans-serif;
+  color: dimgrey;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
 
 </style>
 </head>
 <body style="background-color:black;">
-<div>
+<div class="container">
   <img id="frame" src="frame.png?" + new Date.getTime()>
+  <div class="bottom-right" id="attribution"></div>
 </div>
 
 </body>
 
+<script type="text/javascript"src="config.js"></script>
 <script>
 
 function updateImage()
 {
     document.getElementById("frame").src = "frame.png?" + new Date().getTime();
-console.log("x")
 	setTimeout(updateImage, 30 * 1000); 
 }
+
+document.getElementById("attribution").innerHTML = attributionText
 
 updateImage()
 </script>
