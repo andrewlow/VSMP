@@ -20,7 +20,6 @@ async function main() {
   movieFile = await storage.getItem("movieFile");
 
   console.log(movieFile);
-  console.log(currentFrame + "/" + totalFrames);
   // console.log(frameRate);
 
   const cmd = ffmpeg(movieFile);
@@ -44,7 +43,8 @@ async function main() {
     ("0" + date.getUTCSeconds()).slice(-2) +
     "." +
     ("00" + date.getUTCMilliseconds()).slice(-3);
-  // console.log(timeStamp);
+
+  console.log(timeStamp + "  " + currentFrame + "/" + totalFrames);
 
   cmd.screenshots({
     timestamps: [timeStamp],

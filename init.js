@@ -9,12 +9,12 @@ async function getInfo(file) {
   const info = await probe(file);
 
   const numFramesTotal = parseInt(info.streams[0].nb_frames);
-  const r_frame_rate = parseInt(info.streams[0].r_frame_rate);
+  const r_frame_rate = eval(info.streams[0].r_frame_rate);
 
   // console.log(info);
   // console.log(numFramesTotal);
-  // console.log(r_frame_rate);
   console.log("Movie file: " + file);
+  console.log("Frame rate: " + r_frame_rate);
   console.log("Total frames: " + numFramesTotal);
 
   await storage.init({
