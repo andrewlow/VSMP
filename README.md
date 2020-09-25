@@ -22,6 +22,10 @@ sh example.sh &
 node webserver.js
 ```
 
+## Links
+
+https://github.com/TomWhitwell/SlowMovie - Pi based + custom e-ink screen.
+
 ## Future
 I'd like to create a canned RaspberryPi distribution for easy setup and use.
 It current plays 1 frame per 30 seconds, configuration of this might be nice.
